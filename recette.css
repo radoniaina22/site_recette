@@ -10,10 +10,9 @@ body {
 
 div.contenu {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 30px;
-    padding-top: 0px;
-    min-width: 350px;
+    margin: 20px 8px 20px 8px;
+    padding: 0px 8px 20px 8px;
+    /*min-width: 350px;*/
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
     overflow: visible;
 }
@@ -78,13 +77,14 @@ table.tableau {
 
 table.tableau td {
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     vertical-align: top;
 }
 
 table.tableau th {
     vertical-align: bottom;
     padding-bottom: 4px;
+    font-size: 14px;
 }
 
 img.info {
@@ -96,8 +96,8 @@ img.info {
 }
 
 div.colonne {
-    width: 45%;
-    margin-top: 20px;
+    width: 100%;
+    /*margin-top: 20px;*/
 }
 
 div.colonne h2 {
@@ -152,4 +152,56 @@ table.preparation td.texte {
     padding-bottom: 10px;
 }
 
+/*Style pour ordinateur*/
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        min-width: 350px;
+        margin: 60px 10% 80px 10%;
+        padding: 30px;
+        padding-top: 0px;
+    }
 
+    table.tableau td {
+        text-align: center;
+        font-size: 15px;
+        vertical-align: top;
+    }
+    
+    table.tableau th {
+        vertical-align: bottom;
+        padding-bottom: 4px;
+    }
+
+    table.tableau {
+        height: 50px;
+    }
+
+    div.colonne {
+        width: 45%;
+        margin-top: 20px;
+    }
+    
+    div.colonne h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        border-bottom: 4px solid #5D6D7E;
+        padding-bottom: 5px;
+    }
+    
+    div.colonne1 {
+        display:inline-block;
+    }
+    
+    div.colonne2 {
+        float: right;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        width: 640px;
+    }
+  }
